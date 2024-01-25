@@ -11,6 +11,7 @@ import { RectangleComponent } from './rectangle/rectangle.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { MarksComponent } from './marks/marks.component';
 import { ProductsComponent } from './products/products.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 const routes: Routes = [
   {path:"login",component: LoginComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
     {path:"rectangle",component:RectangleComponent},
     {path:"directives",component:DirectivesComponent},
     {path:"marks",component:MarksComponent},
-    {path:"products",component:ProductsComponent}
+    {path:"products",component:ProductsComponent},
+    {path:"Registration",component:RegistrationComponent}
 
   ]},
   {path:"",component:LoginComponent},

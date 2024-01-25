@@ -3,7 +3,7 @@ body{
 }
 .mani{
     background-color: steelblue;
-    height: 100vh;
+    height: 100%;
     width: 80vw;
     display: flex;
     justify-content: center;

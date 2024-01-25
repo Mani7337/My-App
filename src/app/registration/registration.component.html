@@ -1,0 +1,20 @@
+<div class="parent">
+    <div class="child">
+        <h2>Event Registration</h2>
+        <br>
+
+        <input type="name" class="inp" [(ngModel)]="names">
+        <button (click)="submit()">Submit</button>
+        <br>
+
+        <h1>Registration Users</h1>
+
+        <ol>
+           <li *ngFor="let arr of name; let i=index">{{arr}}
+            <button class="btn" (click)="delete(i)">delete</button>
+
+        </li>
+        </ol>
+        <button class="btn">Delete</button>
+    </div>
+</div>

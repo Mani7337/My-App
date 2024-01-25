@@ -18,6 +18,7 @@ import { ProductsComponent } from './products/products.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { PricePipe } from './price.pipe';
 import { RatingPipe } from './rating.pipe';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { RatingPipe } from './rating.pipe';
     ProductsComponent,
     PipesComponent,
     PricePipe,
-    RatingPipe
+    RatingPipe,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
