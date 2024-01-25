@@ -1,0 +1,46 @@
+.parent{
+    height: 100vh;
+    width: 100vw;
+    background-color: brown;
+    display: flex;
+    overflow: auto;
+}
+.left{
+    height: 100%;
+    width: 20vw;
+    background-color: burlywood;
+    text-align: center;
+}
+
+.rigth{
+    height: 100vh;
+    width: 80vw;
+    background-color: chartreuse;
+   
+}
+
+button{
+    width: 80%;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    border: 0;
+}
+
+h1{
+    cursor: pointer;
+}
+
+h1:hover{
+    background-color: aliceblue;
+    width: 100%;
+}
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: green;
+}

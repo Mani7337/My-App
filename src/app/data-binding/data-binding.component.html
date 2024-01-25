@@ -1,0 +1,26 @@
+<div class="parent">
+    <div class="child">
+        <p>My age is {{age}}</p>
+        <p>My name is {{name}}</p>
+
+        <p>Ages: {{ages}}</p>
+        <p>Names: {{names}}</p>
+
+
+        <p>User: {{name}}</p>
+
+
+        <!-- event binding  -->
+
+        <button (click)="submit()">submit</button>
+
+        <input type="text" (keypress)="key()">
+
+        <!-- two way data binding -->
+
+        <input type="text" [(ngModel)]="myphone">
+
+        <p>{{myphone}}</p>
+
+    </div>
+</div>

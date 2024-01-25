@@ -1,0 +1,30 @@
+.parent{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    height: 200px;
+    width: 250px;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    background-color: red;
+    color: white;
+    width: 150px;
+}
+
+button:hover{
+    background-color: green;
+}

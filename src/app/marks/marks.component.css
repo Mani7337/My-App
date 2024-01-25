@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+
+.red{
+    background-color: red;
+    color: antiquewhite;
+}
+
+.green{
+    background-color: green;
+    color: aliceblue;
+}
+
+.parent{
+    background-color: aliceblue;
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    padding-left: 15px;
+
+}
