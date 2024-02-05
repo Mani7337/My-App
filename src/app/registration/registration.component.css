@@ -1,7 +1,12 @@
- .parent{
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent{
     background-color: rgb(9, 237, 161);
-    height: 100vh;
-    width: 80vw;
+    height: 100%;
+    width: 100%;
     
  }
  h2{

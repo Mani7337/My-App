@@ -8,16 +8,16 @@ import { Component } from '@angular/core';
 export class RegistrationComponent {
 
 
-  public names:string=""
+  public names: string = ""
 
-  public name:string[]=['Mani','Afzal','Nethaji']
-  
-submit(){
-  this.name.push(this.names)
-}
+  public name: string[] = ['Mani', 'Afzal', 'Nethaji']
 
-delete(i:number){
-  this.name.splice(i,1)
+  submit() {
+    this.name.push(this.names)
+  }
 
-}
+  delete(i: number) {
+    this.name.splice(i, 1)
+
+  }
 }

@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    background-color: rgb(5, 247, 166);
+    height: 100%;
+    width: 100%;
+
+}
+h1{
+    color: white;
+}

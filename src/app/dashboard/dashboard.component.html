@@ -1,7 +1,7 @@
 <div class="parent">
     <div class="left">
         <h1 routerLink="home">HOME</h1>
-        <h1 >PRODUCTS</h1>
+
         <h1 routerLink="about">ABOUT</h1>
         <h1>CART</h1>
         <h1 routerLink="data-binding">Data-Binding</h1>
@@ -11,10 +11,23 @@
         <h1 routerLink="products">Products</h1>
         <h1 routerLink="rectangle">Rectangle</h1>
         <h1 routerLink="Registration">Registration</h1>
-        <button routerLink="/login">Logout</button>
+        <h1 routerLink="Cars">Cars</h1>
+        <h1 routerLink="Vehicle">Vehicle</h1>
+        <h1 routerLink="Account">Account</h1>
+        <h1 routerLink="Students">Students</h1>
+        <h1 routerLink="Flipcart">Flipcart</h1>
+        <h1 routerLink="Create-Student">Create-Student</h1>
+        <h1 routerLink="Create-Account">Create-Account</h1>
+        <h1 routerLink="Create-vehicle">Create-vehicle</h1>
+        <h1 routerLink="Create-Product">Create-Product</h1>
+        <h1 routerLink="Practice">Practice</h1>
+        <h1 routerLink="Parent">Parent</h1>
+        <button class="logout" (click)="logout()">Logout</button>
         <!-- <h1 routerLink="rectangle">Rectangle</h1> -->
 
     </div>
-    <div class="right"></div>
-    <router-outlet></router-outlet>
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
+
 </div>

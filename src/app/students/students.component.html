@@ -1,0 +1,37 @@
+<div class="parent">
+    <input type="text" placeholder="search" [(ngModel)]="term" (keyup.enter)="filter()">
+    <button (click)="filter()">search</button>
+
+    <select name="" id="" [(ngModel)]="column">
+        <option>city</option>
+        <option>fee</option>
+    </select>
+    <select name="" id="" [(ngModel)]="order">
+        <option value="asc">ascending</option>
+        <option value="desc">descending</option>
+    </select>
+    <button (click)="sort()">sort</button>
+
+    <label for="">Select page:</label>
+
+    <select [(ngModel)]="page" (change)="pagination()">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <div style="display: flex; flex-wrap: wrap;">
+        <div class="card" *ngFor="let Student of Students">
+            <img src="{{Student.image}}" alt="">
+            <h4>Name:-{{Student.name}}</h4>
+            <p>Id:- {{Student.id}}</p>
+            <p>Phone No:- {{Student.phone}}</p>
+            <p>City:- {{Student.city}}</p>
+            <p>Fee:- {{Student.fee}}</p>
+
+            <div>
+                <button (click)="edit(Student.id)" class="btn btn-warning">edit</button>
+                <button (click)="delete(Student.id)" class="btn btn-danger">delete</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+.parent{
+    background-color: aliceblue;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.child{
+    background-color: aquamarine;
+    height: 49%;
+    width: 24%;
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+    margin: 5px;
+
+}
+.img{
+    padding-left: 10px;
+}
+
+.title{
+    font-size: 25px;
+}
+.child:hover{
+    overflow: auto;
+}

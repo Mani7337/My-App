@@ -7,26 +7,26 @@ import { Component } from '@angular/core';
 })
 export class DataBindingComponent {
 
-  public age:number =24;
+  public age: number = 24;
 
-  public name:string ="Mani";
+  public name: string = "Mani";
 
-  public ages:number[] = [24,23];
+  public ages: number[] = [24, 23];
 
-  public names:string[] =['Mani','Snigdha'];
+  public names: string[] = ['Mani', 'Snigdha'];
 
-  public user:any = {name:"Mani",age:24};
+  public user: any = { name: "Mani", age: 24 };
 
-  public myphone:string = "+91"
+  public myphone: string = "+91"
 
 
-  
 
-  submit(){
+
+  submit() {
     alert("submit clicked");
   }
 
-  key(){
+  key() {
     alert("key pressed")
   }
 

@@ -1,0 +1,82 @@
+<div class="main">
+    <div class="form" [formGroup]="practiceForm">
+
+        <label for="">Name:</label>
+        <input type="text" formControlName="name">
+        <br>
+
+        <label for="">Age</label>
+        <input type="number" formControlName="age">
+        <br>
+
+        <label for="">Email:</label>
+        <input type="email" formControlName="email">
+        <br>
+
+        <div class="address" formGroupName="address">
+            <h2>
+                address
+            </h2>
+            <label for="">State:</label>
+            <input type="text" formControlName="state">
+            <br>
+
+            <label for="">Pincode</label>
+            <input type="number" formControlName="pincode">
+            <br>
+        </div>
+
+        <div formArrayName="cards">
+            <button (click)="add()">Add</button>
+
+            <div *ngFor="let card of cardsFormArray.controls; let i = index">
+                <div formGroupName="{{i}}">
+                    <h2>cards {{i+1}}</h2>
+
+                    <label for="">cno:</label>
+                    <input type="text" formControlName="cno">
+                    <br>
+
+                    <label for="">exp</label>
+                    <input type="number" formControlName="exp">
+                    <br>
+
+                    <label for="">cvv:</label>
+                    <input type="email" formControlName="cvv">
+                    <br>
+
+                    <button (click)="deletecard(i)">delete</button>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <label for="">Type:</label>
+            <input type="radio" name="type" value="dayscholor" formControlName="type">
+            <label for="">Day Scholor</label>
+            <input type="radio" name="type" value="Hostlier" formControlName="type">
+            <label for="">Hostlier</label>
+            <br>
+
+            <div *ngIf="practiceForm.get('type')?.value == 'dayscholor'">
+                <label for="">Bus Fee:</label>
+                <input type="text" formControlName="busfee">
+                <br>
+            </div>
+
+            <div *ngIf="practiceForm.get('type')?.value == 'Hostlier'">
+                <label for="">Hostel Fee:</label>
+                <input type="text" formControlName="hostelfee">
+                <br>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <button class="btn-warning" (click)="submit()">Submit</button>
+
+</div>

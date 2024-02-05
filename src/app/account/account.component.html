@@ -1,0 +1,51 @@
+<input type="text" placeholder="search" [(ngModel)]="term">
+<button (click)="filter()">search</button>
+
+<select name="" id="" [(ngModel)]="column">
+    <option>city</option>
+    <option>fee</option>
+</select>
+<select name="" id="" [(ngModel)]="order">
+    <option value="asc">ascending</option>
+    <option value="desc">descending</option>
+</select>
+<button (click)="sort()">sort</button>
+
+<label for="">Select page:</label>
+
+<select [(ngModel)]="page" (change)="pagination()">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+</select>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>account-name:</th>
+            <th>available-balance:</th>
+            <th>account-number</th>
+            <th>city</th>
+            <th>profile-picture</th>
+
+            <th>id</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let account of account">
+            <td>{{account.account_name}}</td>
+            <td>{{account.available_balance}}</td>
+            <td>{{account.account_number}}</td>
+            <td>{{account.city}}</td>
+
+
+
+            <td>
+                <img src="{{account.profie_picture}}" alt="" style="height: 60px; width: 60px;">
+            </td>
+            <td>{{account.id}}</td>
+
+        </tr>
+    </tbody>
+</table>

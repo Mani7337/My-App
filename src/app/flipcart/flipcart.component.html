@@ -1,0 +1,15 @@
+<div class="parent">
+    <div class="child" *ngFor="let flipcart of flipcart">
+
+        <p>{{flipcart.id}}</p>
+        <p class="img">
+            <img src={{flipcart.image}} alt="" style="height: 100px; width: 100px;">
+        </p>
+        <p class="title">{{flipcart.title}}</p>
+        <p>{{flipcart.price | price}}</p>
+        <p>{{flipcart.description}}</p>
+        <p>{{flipcart.category}}</p>
+
+        <p>{{flipcart.rating.rate| rating}},{{flipcart.rating.count}}</p>
+    </div>
+</div>

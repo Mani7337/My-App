@@ -1,0 +1,27 @@
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+    overflow: auto;
+}
+.card{
+    height: 400px;
+    width: 300px;
+    background-color: cornsilk;
+    text-align: center;
+    margin: 5px;
+    
+}
+img{
+    height: 200px;
+    width: 150px;
+    margin: 5px 0 5px 90px;
+}
+p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    
+
+}
+

@@ -1,0 +1,17 @@
+<div class="parent">
+    <div class="child">
+        <h1>Cars</h1>
+        <br>
+        <label for="honda" (click)="cars(1)">Honda</label>
+        <input type="radio" name="car" id="honda" (click)="cars(1)">
+        <label for="bmw" (click)="cars(2)">BMW</label>
+        <input type="radio" name="car" id="bmw" (click)="cars(2)">
+        <label for="audi" (click)="cars(3)">Audi</label>
+        <input type="radio" name="car" id="audi" (click)="cars(3)"><br>
+
+        <img src="./../../assets/audi.jpg" alt="audi" *ngIf="this.var==3">
+        <img src="./../../assets/bmw.jpg" alt="bmw" *ngIf="this.var==2">
+        <img src="./../../assets/honda.jpg" alt="honda" *ngIf="this.var==1">
+
+    </div>
+</div>

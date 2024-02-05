@@ -1,0 +1,71 @@
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: chocolate;
+}
+.child1{
+    height: 45%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.child2{
+    height: 45%;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.left{
+    height: 100%;
+    width: 45%;
+    background-color: red;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+}
+.rt1{
+    height: 45%;
+    width: 100%;
+    background-color: greenyellow;
+    margin-top: 10px;
+}
+.rt2{
+    height: 45%;
+    width: 100%;
+    background-color: brown;
+    margin-top: 10px;
+}
+.l1{
+    height: 95%;
+    width: 45%;
+    background-color: rgb(248, 6, 167);
+}
+.r1{
+    height: 95%;
+    width: 45%;
+    background-color: darkorange;
+}
+
+button{
+    margin-top: 15px;
+    margin-left: 45%;
+}
+label{
+    width: 150px;
+}
+
+input{
+    margin-top: 5px;
+}
+.bt1{
+    background-color: green;
+    color: antiquewhite;
+    border: 0;
+    border-radius: 5px;
+}

@@ -1,0 +1,37 @@
+<h1>Create Student Form</h1>
+
+<form [formGroup]="StudentForm">
+
+
+    <label for="">Name:</label>
+    <input type="text" formControlName="name">
+    <br>
+
+
+    <label for="">Phone:</label>
+    <input type="text" formControlName="phone">
+    <br>
+
+
+    <label for="">City:</label>
+    <input type="text" formControlName="city">
+    <br>
+
+
+    <label for="">Fee:</label>
+    <input type="text" formControlName="fee">
+    <br>
+
+    <label for="">Image:</label>
+    <input type="text" formControlName="image">
+    <br>
+
+    <label for="">Id:</label>
+    <input type="text" formControlName="id">
+    <br>
+
+    <button class="btn btn-primary" (click)="Submit()">{{id? 'update' : 'create'}}</button>
+
+
+
+</form>
