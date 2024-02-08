@@ -24,6 +24,7 @@ import { AuthenticationGuard } from './authentication.guard';
 import { CreateproductComponent } from './createproduct/createproduct.component';
 import { PracticeComponent } from './practice/practice.component';
 import { ParentComponent } from './parent/parent.component';
+import { SchoolappComponent } from './schoolapp/schoolapp.component';
 
 const routes: Routes = [
   {path:"login",component: LoginComponent},
@@ -51,7 +52,7 @@ const routes: Routes = [
     {path:"Parent",component:ParentComponent},
     {path:"edit-vehicle/:id",component:CreateVehicleComponent},
     {path:"edit-student/:id",component:CreateStudentComponent},
-    
+    {path:"Schoolapp",component:SchoolappComponent}
 
   ]},
   {path:"",component:LoginComponent},

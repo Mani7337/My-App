@@ -32,6 +32,7 @@ import { CreateproductComponent } from './createproduct/createproduct.component'
 import { PracticeComponent } from './practice/practice.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { SchoolappComponent } from './schoolapp/schoolapp.component';
 
 
 @NgModule({
@@ -64,6 +65,7 @@ import { ChildComponent } from './child/child.component';
     PracticeComponent,
     ParentComponent,
     ChildComponent,
+    SchoolappComponent,
   ],
   imports: [
     BrowserModule,
