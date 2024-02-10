@@ -1,3 +1,10 @@
-<p>Text: {{child}}</p>
+<p>Iam child</p>
 
-<input type="text" [(ngModel)]="bc" (keyup)="send()">
+<h1>{{parentToChild}}</h1>
+
+<input type="text" (keyup)="send()" [(ngModel)]="childInput">
+
+<div *ngFor="let obj of array">
+    <h1>{{obj.name}}</h1>    
+    <h1>{{obj.age}}</h1>
+</div>

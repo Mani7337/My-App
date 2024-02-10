@@ -33,6 +33,20 @@ import { PracticeComponent } from './practice/practice.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { SchoolappComponent } from './schoolapp/schoolapp.component';
+import { SiblingsComponent } from './siblings/siblings.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { RatingsComponent } from './ratings/ratings.component';
+import { Rating1Component } from './rating1/rating1.component';
+import { PcComponent } from './pc/pc.component';
+import { Calculator1Component } from './calculator1/calculator1.component';
+import { InputComponent } from './input/input.component';
+import { ButtonComponent } from './button/button.component';
+import { ResultComponent } from './result/result.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { Parent1Component } from './parent1/parent1.component';
+import { Child1Component } from './child1/child1.component';
 
 
 @NgModule({
@@ -66,13 +80,27 @@ import { SchoolappComponent } from './schoolapp/schoolapp.component';
     ParentComponent,
     ChildComponent,
     SchoolappComponent,
+    SiblingsComponent,
+    Sibling1Component,
+    Sibling2Component,
+    RatingsComponent,
+    Rating1Component,
+    PcComponent,
+    Calculator1Component,
+    InputComponent,
+    ButtonComponent,
+    ResultComponent,
+    Parent1Component,
+    Child1Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule
     
   ],
   providers: [],

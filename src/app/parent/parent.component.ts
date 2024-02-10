@@ -7,13 +7,18 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
 
-  public parent:string = "";
-  public p1:string = "";
+ public parentInput:string='';
 
-  constructor () {}
+ public childToParent:string='';
 
-  catch(value:any){
-    this.p1=value;
-  }
+ public array:any=[
+  {name:'vasu',age:25},
+  {name:'mani', age:24},
+  {name:'afzal', age:30}
+ ]
+
+ catch(val:string){
+   this.childToParent=val;
+ }
 
 }

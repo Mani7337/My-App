@@ -1,4 +1,7 @@
-<input type="text" [(ngModel)]="parent">
+<p>iam parent</p>
+<h1><b>{{childToParent}}</b></h1>
+<input type="text" [(ngModel)]="parentInput">
 
-<p>Text:{{p1}}</p>
-<app-child [child]="parent" (bEvent)="catch($event)"></app-child>
+<p>{{parentInput}}</p>
+<app-child [parentToChild]="parentInput" (childToParent)="catch($event)" [array]="array"></app-child>
+

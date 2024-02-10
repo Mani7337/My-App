@@ -25,6 +25,9 @@ import { CreateproductComponent } from './createproduct/createproduct.component'
 import { PracticeComponent } from './practice/practice.component';
 import { ParentComponent } from './parent/parent.component';
 import { SchoolappComponent } from './schoolapp/schoolapp.component';
+import { SiblingsComponent } from './siblings/siblings.component';
+import { RatingsComponent } from './ratings/ratings.component';
+import { Calculator1Component } from './calculator1/calculator1.component';
 
 const routes: Routes = [
   {path:"login",component: LoginComponent},
@@ -52,7 +55,10 @@ const routes: Routes = [
     {path:"Parent",component:ParentComponent},
     {path:"edit-vehicle/:id",component:CreateVehicleComponent},
     {path:"edit-student/:id",component:CreateStudentComponent},
-    {path:"Schoolapp",component:SchoolappComponent}
+    {path:"Schoolapp",component:SchoolappComponent},
+    {path:"Siblings",component:SiblingsComponent},
+    {path:"Ratings",component:RatingsComponent},
+    {path:"Calculator1",component:Calculator1Component}
 
   ]},
   {path:"",component:LoginComponent},

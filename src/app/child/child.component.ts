@@ -7,21 +7,15 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class ChildComponent {
 
-  public bc:string = ""
+  public childInput:string='';
+ @Input() parentToChild:string='';
 
- @Input() public child:string = "";
+ @Output() childToParent:EventEmitter<string>=new EventEmitter();
 
-@Output() public bEvent:EventEmitter<string> = new EventEmitter();
+ @Input() array:any='';
 
-
-constructor () {}
-
-send(){
-
-  
-  this.bEvent.emit(this.bc);
-}
-
-
+ send(){
+   this.childToParent.emit(this.childInput)
+ }
 
 }
